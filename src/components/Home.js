@@ -8,7 +8,7 @@ export default function Home() {
       <Hero />
       <div className="box cta">
         <p className="has-text-centered">
-          <span className="tag is-primary">New</span> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          <span className="tag is-primary">New</span> Document Managment System as software as a service, no maintanance is required.
         </p>
       </div>
       <HomeContent />

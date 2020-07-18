@@ -4,35 +4,53 @@ export default function HomeContent() {
   return (
     <section className="container">
         <div className="columns features">
-            <div className="column is-4">
+            <div className="column is-3">
                 <div className="card is-shady">
                     <div className="card-content">
                         <div className="content">
-                            <h4>Energy conservation</h4>
-                            <p>Purus semper eget duis at tellus at urna condimentum mattis. Non blandit massa enim nec. Integer enim neque volutpat ac tincidunt vitae semper quis. Accumsan tortor posuere ac ut consequat semper viverra nam.</p>
+                            <h4>Generation of pdf-document</h4>
+                            <p>mm-dok generating document based on your template and your customer database. You can even design your pdf-document via Template-creator.
+                                mm-dok generating document based on your template and your customer database. </p>
                             <p><a href="/">Learn more</a></p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div className="column is-4">
+            <div className="column is-3">
                 <div className="card is-shady">
                     <div className="card-content">
                         <div className="content">
-                            <h4>Water conservation</h4>
-                            <p>Ut venenatis tellus in metus vulputate. Amet consectetur adipiscing elit pellentesque. Sed arcu non odio euismod lacinia at quis risus. Faucibus turpis in eu mi bibendum neque egestas cmonsu songue. Phasellus vestibulum lorem
-                            sed risus.</p>
+                            <h4>Document storage</h4>
+                            <p>mm-dok storage manager is based on S3 platform, it is distributed cluster system with high avaliabilityglobal.
+                            mm-dok storage manager is based on S3 platform, it is distributed cluster system with high avaliabilityglobal.</p>
                             <p><a href="/">Learn more</a></p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div className="column is-4">
+
+            <div className="column is-3">
+                <div className="card is-shady">
+                    <div className="card-content">
+                        <div className="content">
+                            <h4>Electronic Signature</h4>
+                            <p>Your customer will use the function to make electronic signature.
+                                Make a documented negetiation is important for most of the businesses today. There is legal requirement.
+                            </p>
+                            <p><a href="/">Learn more</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div className="column is-3">
                 <div className="card is-shady">
                      <div className="card-content">
                         <div className="content">
-                            <h4>Solar energy</h4>
-                            <p>Imperdiet dui accumsan sit amet nulla facilisi morbi. Fusce ut placerat orci nulla pellentesque dignissim enim. Libero id faucibus nisl tincidunt eget nullam. Commodo viverra maecenas accumsan lacus vel facilisis.</p>
+                            <h4>Document searching</h4>
+                            <p>You can search the document in mm-dok with metadata or free text searching. It is possible to search based on different document type.
+                            The find your document.
+                            </p>
                             <p><a href="/">Learn more</a></p>
                         </div>
                     </div>
