@@ -1,0 +1,10 @@
+{
+  "api": { 
+    "invokeUrl": "https://5bltcq602h.execute-api.eu-central-1.amazonaws.com/prod"
+  } ,
+  "mincognito" :{
+      "REGION":"eu-central-1",
+      "USER_POOL_ID":"eu-central-1_oACGGvc7v",
+      "APP_CLIENT_ID":"1ijbi378udh6v4n61qi1bravql"
+  }
+}
