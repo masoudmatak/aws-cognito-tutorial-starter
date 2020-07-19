@@ -38,27 +38,29 @@ class Register extends Component {
     }
     const {username, email, password} =this.state;
        try{
+        console.log("MM 11 "+email);
+        console.log("MM 11 "+username);
+        console.log("MM 11 "+password);
           const signupResponse= await Auth.signUp({
             username,
             password,
             attributes: {
               email:email             
-            },
-            validationData: [],  // optional
-            })
-            .then(data => console.log("MMMMMMMMM "+data))
-            .catch(err => console.log(err));
+            }
+          });
+          console.log("MM 222 ");
             console.log(signupResponse);
             this.props.history.push("/welcome");
        }catch(error){
+         console.log(error);
          let err=null;
          !error.message ? err = {"message": error } : err=error;
-            this.state({
+            this.setState({
               errors: {
-                ...this.state.error,
+                ...this.state.errors,
                 cognito:err
               }
-            })
+            });
        }
   };
 

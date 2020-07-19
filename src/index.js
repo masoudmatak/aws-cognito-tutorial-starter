@@ -14,25 +14,23 @@ import * as serviceWorker from './serviceWorker';
 
 Amplify.configure({
     Auth: {
-        // REQUIRED - Amazon Cognito Identity Pool ID,
-       // identityPoolId: awsmobile.aws_cognito_identity_pool_id,
-        // REQUIRED - Amazon Cognito Region
-        region:  config.mincognito.REGION,
-        // OPTIONAL - Amazon Cognito User Pool ID
-        userPoolId: config.mincognito.USER_POOL_ID,
-        // OPTIONAL - Amazon Cognito Web Client ID (26-char alphanumeric string)
-        userPoolWebClientId: config.mincognito.APP_CLIENT_ID,
-        // OPTIONAL - Enforce user authentication prior to accessing AWS resources or not
+      
+        region:  config.cognito.REGION,
+      
+        userPoolId: config.cognito.USER_POOL_ID,
+      
+        userPoolWebClientId: config.cognito.APP_CLIENT_ID,
+       
         mandatorySignIn: true,
-        // OPTIONAL - Configuration for cookie storage
+       
         cookieStorage: {
-            // REQUIRED - Cookie domain (only required if cookieStorage is provided)
+           
             domain: '.yourdomain.com',
-            // OPTIONAL - Cookie path
+           
             path: '/',
-            // OPTIONAL - Cookie expiration in days
+            
             expires: 365,
-            // OPTIONAL - Cookie secure flag
+           
             secure: true
         }
     }
