@@ -41,9 +41,9 @@ class LogIn extends Component {
    }catch(error){
      let err=null;
      !error.message ? err = {"message": error } : err=error;
-        this.state({
+        this.setState({
           errors: {
-            ...this.state.error,
+            ...this.state.errors,
             cognito:err
           }
         });
