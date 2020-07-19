@@ -23,7 +23,7 @@ class LogIn extends Component {
   };
 
   handleSubmit = async event => {
-    event.preventDefault();
+    //event.preventDefault();
 
     // Form validation
     this.clearErrorState();
@@ -35,10 +35,16 @@ class LogIn extends Component {
     }
 
     try{
+      console.log("innan ");
       const user= await Auth.signUp(this.state.username, this.state.password);
+      console.log("efter ");
         console.log(user);
+      /*  this.props.auth.setAuthenticated(true);
+        this.props.auth.setUser(user);*/
         this.props.history.push("/");
+        console.log("sist ");
    }catch(error){
+    console.log(error);
      let err=null;
      !error.message ? err = {"message": error } : err=error;
         this.setState({
